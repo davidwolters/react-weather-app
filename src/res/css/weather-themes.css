@@ -1,0 +1,73 @@
+
+:root {
+    --blue: #6290C3;
+    --light-blue: #BBE5ED;
+    --dark-blue: #19323C;
+    --white: #f3f7f0;
+    --snow-night: #BFBCCB;
+    --purple-gray: #888098;
+    --default-bg: #DFC2F2;
+    --dark-text: #555;
+}
+
+.bg-blank {
+    background-color: var(--default-bg);
+}
+
+.bg-stormy-day, .bg-rainy-day, .bg-clear-night, .bg-cloudy-night {
+    background-color: var(--blue);
+}
+
+.bg-stormy-night, .bg-rainy-night {
+    background-color: var(--dark-blue);
+}
+
+.bg-snowy-day {
+    background-color: var(--white);
+}
+
+.bg-snowy-night {
+    background-color: var(--snow-night);
+}
+
+.bg-misty-day {
+    background-color: var(--purple-gray);
+}
+
+.bg-misty-night {
+    background-color: var(--dark-blue );
+}
+
+.bg-clear-day, .bg-cloudy-day {
+    background-color: var(--light-blue);
+}
+
+.text-snowy-night,
+.text-clear-day,
+.text-snowy-day,
+.text-cloudy-day {
+    color: var(--dark-text);
+}
+
+.text-stormy-night,
+.text-rainy-night,
+.text-misty-night,
+.text-blank,
+.text-stormy-day,
+.text-rainy-day,
+.text-clear-night,
+.text-cloudy-night {
+    color: var(--white);
+}
+
+.icon-stormy-night,
+.icon-rainy-night,
+.icon-misty-night,
+.icon-blank,
+.icon-stormy-day,
+.icon-rainy-day,
+.icon-clear-night,
+.icon-cloudy-night {
+    filter: invert(100%);
+}
+
